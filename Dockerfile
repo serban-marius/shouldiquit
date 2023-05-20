@@ -6,5 +6,8 @@ WORKDIR /app
 
 COPY . .
 
+RUN apk --update add build-base nodejs tzdata postgresql-dev postgresql-client libxslt-dev libxml2-dev imagemagick git make
+RUN gem install rails
+
 ENTRYPOINT ["tail", "-f", "/dev/null"]
 
