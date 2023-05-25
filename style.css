@@ -72,6 +72,11 @@ a:focus {
   text-align: center;
 }
 
+.quote {
+  padding-top: 2em;
+  margin: auto 10%;
+}
+
 .tagline {
   font: 300 2rem/2.5rem SFMono-Regular, Menlo, Monaco, Consolas,
     'Liberation Mono', 'Courier New', monospace;
@@ -84,10 +89,15 @@ a:focus {
 .bookquote {
   font: 200 2rem/2.5rem SFMono-Regular, Menlo, Monaco, Consolas,
     'Liberation Mono', 'Courier New', monospace;
-  margin-bottom: 1em;
+  margin-top: 1em;
   color: #999;
-  text-transform: uppercase;
-  padding: 14px 0 13px 0;
+  text-align: left;
+}
+
+.buy {
+  height: 25px;
+  padding-top: 10px;
+  padding-left: 10px;
 }
 
 #text {
@@ -100,6 +110,7 @@ a:focus {
 
 .meta {
   align-self: flex-end;
+  margin-top: 1em;
   padding: 1em 0;
   text-align: center;
   width: 100%;

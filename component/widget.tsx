@@ -37,18 +37,23 @@ const Widget = (props: IWidget) => {
    */
   return (
     <div className="item">
-      <h3 className="tagline">Should I Quit Today?</h3>
+      <a id='reload' href='https://shouldideploy.today'>Esta web es una parodia de https://shouldideploy.today!</a>
+      <h3 className="tagline">Should I Quit My Job Today?</h3>
       <h2 id="text" className="reason">
         {reason?.[0]}
       </h2>
-      <a
-        className="bookquote"
-        target="_blank"
-        rel="noopener noreferrer"
-        href={reason?.[2]}
-      >
-        {reason?.[1]}
-      </a>
+      <div>
+        <a
+          id="reload"
+          target="_blank"
+          rel="noopener noreferrer"
+          href={reason?.[2]}
+        >
+          {reason?.[1]} <br/><br/>
+          <span className="space-btn">Pulsa aqui para comprar en Amazon.</span>
+        </a>
+      </div>
+
       <br></br>
       <span id="reload" onClick={onSpacePressOrClick}>
         Hit <span className="space-btn">Space</span> or Click
