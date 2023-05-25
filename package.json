@@ -1,0 +1,52 @@
+{
+  "name": "shouldiquit",
+  "description": "Should I Quit today?",
+  "author": "Marius Serban",
+  "license": "WTFPL",
+  "version": "0.0.1",
+  "repository": "https://github.com/serban-marius/shouldiquit",
+  "scripts": {
+    "precommit": "NODE_ENV=production lint-staged",
+    "dev": "next",
+    "build": "next build && next export",
+    "start": "next start",
+    "lint": "next lint --dir  pages --dir component --dir helpers",
+    "format": "prettier-eslint --write $PWD/'**/*.js'",
+    "test": "jest"
+  },
+  "dependencies": {
+    "@vercel/analytics": "^1.0.1",
+    "firebase": "^9.22.0",
+    "next": "^13.4.2",
+    "prettier-eslint-cli": "^7.1.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "snyk": "^1.1155.0"
+  },
+  "devDependencies": {
+    "@types/jest": "^29.5.1",
+    "@types/node": "20.1.4",
+    "@types/react": "18.2.6",
+    "babel-eslint": "^10.1.0",
+    "eslint": "^8.40.0",
+    "eslint-config-next": "^13.4.2",
+    "eslint-config-prettier": "^8.8.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "eslint-plugin-react": "^7.32.2",
+    "husky": "^8.0.3",
+    "jest": "^29.5.0",
+    "lint-staged": "^13.2.2",
+    "prettier": "^2.8.8",
+    "ts-jest": "^29.1.0",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.0.4"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run format && npm run lint"
+    }
+  },
+  "engines": {
+    "node": "20.x"
+  }
+}
