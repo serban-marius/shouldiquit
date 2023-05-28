@@ -182,6 +182,9 @@ ul.footer-list select {
   #reload {
     font-size: 1.25rem;
   }
+  #item {
+    max-width: 90%;
+  }
   ul.footer-list select {
     max-width: 70px;
   }
